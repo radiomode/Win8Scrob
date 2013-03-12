@@ -79,7 +79,7 @@
             <Grid.Background>
                 <SolidColorBrush Color="{StaticResource Серый}"/>
             </Grid.Background>
-            <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" Source="sample.jpg"  Grid.ColumnSpan="2" Grid.RowSpan="2" Height="207" />
+            <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" Source="sample.jpg"  Grid.ColumnSpan="2" Height="207" Margin="0,-2" />
             <TextBlock x:Name="since" HorizontalAlignment="Left" Margin="119,123,0,0" TextWrapping="Wrap" Text="since" VerticalAlignment="Top" Height="26" Width="36" Foreground="Black" FontSize="16" FontFamily="Segoe UI" Grid.Column="3" Grid.RowSpan="2"/>
             <TextBlock  Grid.Column="3" Grid.Row="0" x:Name="nameSurnameTextBlock" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="*NAME SURNAME*" Margin="0,27,-57,144" FontFamily="Segoe UI" Foreground="Black" FontWeight="Bold" FontSize="26.667" Grid.ColumnSpan="2" Grid.RowSpan="2"  />
             <TextBlock Grid.Column="3" Grid.Row="0" x:Name="websiteBlock" HorizontalAlignment="Left" Margin="8,76,-65,0" TextWrapping="Wrap" Text="*http://website.com/" VerticalAlignment="Top" Height="28" Width="330" Foreground="#FF0C1676" FontSize="16" Grid.ColumnSpan="2" Grid.RowSpan="2" />
