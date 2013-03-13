@@ -26,7 +26,8 @@ namespace Scrob
             this.InitializeComponent();
             //123123123123
             //hjghjkghghk
-            //iuoluiouiouiouououou
+            //ghjghkgfgkfk
+            //ghkkfkgkj
         }
 
         /// <summary>
