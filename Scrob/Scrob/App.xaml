@@ -27,6 +27,7 @@
         			<TextBlock x:Name="shoutboxUsername" HorizontalAlignment="Left" Margin="80,13,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120"/>
         		</Grid>
         	</DataTemplate>
+        	<Style x:Key="MiniImageStyle" TargetType="Image"/>
 
         </ResourceDictionary>
     </Application.Resources>
