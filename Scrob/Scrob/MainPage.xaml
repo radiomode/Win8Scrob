@@ -11,38 +11,27 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
             <RowDefinition Height="76*"/>
-            <RowDefinition Height="16*"/>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="64*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="13*"/>
-            <RowDefinition Height="17*"/>
-            <RowDefinition Height="15*"/>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="9*"/>
-            <RowDefinition Height="135*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="95*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="89*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="33*"/>
             <ColumnDefinition Width="12*"/>
             <ColumnDefinition Width="48*"/>
-            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="13*"/>
             <ColumnDefinition Width="120*"/>
             <ColumnDefinition Width="290*"/>
             <ColumnDefinition Width="18*"/>
-            <ColumnDefinition Width="102*"/>
-            <ColumnDefinition Width="158*"/>
-            <ColumnDefinition Width="18*"/>
-            <ColumnDefinition Width="140*"/>
-            <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="140*"/>
-            <ColumnDefinition Width="19*"/>
-            <ColumnDefinition Width="140*"/>
-            <ColumnDefinition Width="17*"/>
-            <ColumnDefinition Width="85*"/>
+            <ColumnDefinition Width="822*"/>
         </Grid.ColumnDefinitions>
-        <Grid x:Name="headerGrid" Grid.Row="0" Background="{StaticResource HeaderGradient_Red}" Grid.ColumnSpan="18" Grid.RowSpan="2">
+        <Grid x:Name="headerGrid" Grid.Row="0" Background="{StaticResource HeaderGradient_Red}" Grid.ColumnSpan="9" Grid.RowSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="15*"/>
                 <RowDefinition Height="61*"/>
@@ -59,13 +48,13 @@
                 <ColumnDefinition Width="119*"/>
                 <ColumnDefinition Width="85*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock x:Name="usernameTextBlock" HorizontalAlignment="Left" Margin="10,9,0,14" TextWrapping="Wrap" Text="*USERNAME*" Width="557" FontFamily="Segoe UI" FontSize="48" TextAlignment="Center" Padding="0,0,1,0" Grid.Row="1"/>
+            <TextBlock x:Name="usernameTextBlock" HorizontalAlignment="Left" Margin="86,13,0,10" TextWrapping="Wrap" Text="*USERNAME*" Width="595" FontFamily="Segoe UI" FontSize="48" TextAlignment="Center" Padding="0,0,1,0" Grid.Row="1"/>
             <Button Grid.Column="1" Grid.Row="1" x:Name="nowplayingButton" Content="Button" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   />
             <Button Grid.Column="3" Grid.Row="1" x:Name="scrobblesButton" Content="Button" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   />
             <Button Grid.Column="5" Grid.Row="1" x:Name="profileButton" Content="Button" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   />
             <Button Grid.Column="7" Grid.Row="1" x:Name="friendsButton" Content="Button" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   />
         </Grid>
-        <Grid Grid.Column="2" Grid.Row="4" x:Name="profilePreviewGrid" VerticalAlignment="Stretch"  Grid.ColumnSpan="6" >
+        <Grid Grid.Column="2" Grid.Row="3" x:Name="profilePreviewGrid" VerticalAlignment="Stretch"  Grid.ColumnSpan="6" Margin="0,0,0,10" Grid.RowSpan="2" >
            
             <Grid.ColumnDefinitions>
         		<ColumnDefinition Width="0*"/>
@@ -79,33 +68,57 @@
             </Grid.Background>
             <Image Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Uniform" Source="sample.jpg"  Grid.ColumnSpan="2" Height="207" Margin="0,-2" />
             <TextBlock x:Name="since" HorizontalAlignment="Left" Margin="119,123,0,0" TextWrapping="Wrap" Text="since" VerticalAlignment="Top" Height="26" Width="36" Foreground="Black" FontSize="16" FontFamily="Segoe UI" Grid.Column="3" Grid.RowSpan="2"/>
-            <TextBlock  Grid.Column="3" Grid.Row="0" x:Name="nameSurnameTextBlock" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="*NAME SURNAME*" Margin="0,27,-57,144" FontFamily="Segoe UI" Foreground="Black" FontWeight="Bold" FontSize="26.667" Grid.ColumnSpan="2" Grid.RowSpan="2"  />
-            <TextBlock Grid.Column="3" Grid.Row="0" x:Name="websiteBlock" HorizontalAlignment="Left" Margin="8,76,-65,0" TextWrapping="Wrap" Text="*http://website.com/" VerticalAlignment="Top" Height="28" Width="330" Foreground="#FF0C1676" FontSize="16" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+            <TextBlock  Grid.Column="3" Grid.Row="0" x:Name="nameSurnameTextBlock" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="*NAME SURNAME*" Margin="0,29,-57,144" FontFamily="Segoe UI" Foreground="Black" FontWeight="Bold" FontSize="26.667" Grid.ColumnSpan="2"  />
+            <TextBlock Grid.Column="3" Grid.Row="0" x:Name="websiteBlock" HorizontalAlignment="Left" Margin="8,80,-64,0" TextWrapping="Wrap" Text="*http://website.com/" VerticalAlignment="Top" Height="28" Width="330" Foreground="#FF0C1676" FontSize="16" Grid.ColumnSpan="2" />
             <TextBlock Grid.Column="3" Grid.Row="0" x:Name="scrobblesCountBlock" HorizontalAlignment="Left" Margin="8,123,0,0" TextWrapping="Wrap" Text="*scrobblesCount*" VerticalAlignment="Top" Height="26" Width="126" Foreground="Black" FontSize="16" FontWeight="Bold" FontFamily="Segoe UI" Grid.RowSpan="2" />
             <TextBlock Grid.Column="3" Grid.Row="0" x:Name="dateBlock" HorizontalAlignment="Left" Margin="167,123,-10,0" TextWrapping="Wrap" Text="*date*" VerticalAlignment="Top" Height="26" Width="116" Foreground="Black" FontSize="16" FontFamily="Segoe UI" Grid.ColumnSpan="2" Grid.RowSpan="2" />
             <TextBlock Grid.Column="3" Grid.Row="0" HorizontalAlignment="Left" Margin="8,157,0,0" TextWrapping="Wrap" Text="*lovedTracksCount*" VerticalAlignment="Top" Foreground="Black" FontFamily="Segoe UI" FontSize="16"  Height="21" Width="138" Grid.RowSpan="2"/>
     	</Grid>
-    	<TextBlock x:Name="Shoutbox" HorizontalAlignment="Left" Margin="0,2,0,0" TextWrapping="Wrap" Text="Shoutbox" VerticalAlignment="Top" Foreground="{StaticResource HeaderGradient_Red}" FontSize="26.667" FontWeight="Bold" Width="139" TextAlignment="Center" Grid.Row="7" Height="32" Grid.ColumnSpan="4" Grid.Column="2"/>
-        <Image Grid.Row="9" Grid.Column="2" Source="avatar.jpg" Stretch="Fill" Grid.ColumnSpan="2" />
-        <TextBox Grid.Row="9"  Grid.Column="5" x:Name="shoutboxInput" HorizontalAlignment="Stretch"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" BorderThickness="2" BorderBrush="{StaticResource BorderBrush}"  Grid.RowSpan="1" Grid.ColumnSpan="3"/>
-    	<ListBox x:Name="shoutListbox" HorizontalAlignment="Left" Height="259" Margin="7,27,0,-16" VerticalAlignment="Top" Width="500" Template="{StaticResource ShoutBoxTemplate}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="2" ItemTemplate="{StaticResource shoutBoxTemplate}" Grid.Row="11" Grid.ColumnSpan="7" Grid.Column="2"/>
-    	<TextBlock x:Name="Library" HorizontalAlignment="Stretch" Margin="79,0,32,0" TextWrapping="Wrap" Text="Library" VerticalAlignment="Top" Foreground="{StaticResource HeaderGradient_Red}" FontSize="26.667" FontWeight="Bold" TextAlignment="Center" Height="34" Grid.ColumnSpan="2" Grid.Row="4" Grid.Column="8"/>
-        <Image Grid.Column="9" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.RowSpan="2" />
-        <Image Grid.Column="11" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.RowSpan="2"/>
-        <Image Grid.Column="13" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.RowSpan="2" />
-        <Image Grid.Column="15" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.RowSpan="2" />
-        <Image Grid.Column="9" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.RowSpan="3" />
-        <Image Grid.Column="11" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.RowSpan="3" />
-        <Image Grid.Column="13" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.RowSpan="3" />
-        <Image Grid.Column="15" Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.RowSpan="3" Grid.ColumnSpan="2" />
-        <TextBlock HorizontalAlignment="Left" Margin="2,0,0,0" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Top" Width="136" Height="46" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.Column="9" Grid.Row="6" Grid.RowSpan="2"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="4,0,0,0" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Top" Width="136" Height="46" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.Column="11" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="3,0,0,0" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Top" Width="136" Height="46" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.Column="13" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="2,0,0,0" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Top" Width="136" Height="46" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.Column="15" Grid.Row="6" Grid.RowSpan="2"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="2,4,0,0" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Top" Width="136" Height="46" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.Column="9" Grid.Row="10" Grid.RowSpan="2"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="4,4,0,0" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Top" Width="136" Height="46" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.Column="11" Grid.Row="10" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="1,4,0,0" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Top" Width="136" Height="46" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.Column="13" Grid.Row="10" Grid.RowSpan="2"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="2,4,0,0" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Top" Width="136" Height="46" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.Column="15" Grid.Row="10" Grid.RowSpan="2"/>
+    	<TextBlock x:Name="Shoutbox" HorizontalAlignment="Left" Margin="0,2,0,0" TextWrapping="Wrap" Text="Shoutbox" VerticalAlignment="Top" Foreground="{StaticResource HeaderGradient_Red}" FontSize="26.667" FontWeight="Bold" Width="139" TextAlignment="Center" Grid.Row="5" Height="32" Grid.ColumnSpan="4" Grid.Column="2"/>
+        <Image Grid.Row="7" Grid.Column="2" Source="avatar.jpg" Stretch="Fill" Grid.ColumnSpan="2" />
+        <TextBox Grid.Row="7"  Grid.Column="5" x:Name="shoutboxInput" HorizontalAlignment="Stretch"  TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Stretch" BorderThickness="2" BorderBrush="{StaticResource BorderBrush}"  Grid.RowSpan="1" Grid.ColumnSpan="3"/>
+    	<ListBox x:Name="shoutListbox" HorizontalAlignment="Left" Height="259" Margin="7,27,0,-108" VerticalAlignment="Top" Width="500" Template="{StaticResource ShoutBoxTemplate}" BorderBrush="{StaticResource BorderBrush}" BorderThickness="2" ItemTemplate="{StaticResource shoutBoxTemplate}" Grid.Row="9" Grid.ColumnSpan="7" Grid.Column="2"/>
+    	<TextBlock x:Name="Library" HorizontalAlignment="Stretch" Margin="79,0,611,0" TextWrapping="Wrap" Text="Library" VerticalAlignment="Top" Foreground="{StaticResource HeaderGradient_Red}" FontSize="26.667" FontWeight="Bold" TextAlignment="Center" Height="34" Grid.Row="3" Grid.Column="8"/>
+    	<Grid x:Name="Grid2" HorizontalAlignment="Left" Height="464" Margin="106,39,0,0" VerticalAlignment="Top" Width="684" Grid.Row="3" Grid.RowSpan="7" Grid.Column="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="14*"/>
+                <RowDefinition Height="74*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="67*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="24*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="31*"/>
+                <ColumnDefinition Width="144*"/>
+                <ColumnDefinition Width="18*"/>
+                <ColumnDefinition Width="138*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="136*"/>
+                <ColumnDefinition Width="24*"/>
+                <ColumnDefinition Width="146*"/>
+                <ColumnDefinition Width="43*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill"  Grid.ColumnSpan="1" Grid.RowSpan="1" />
+            <Image Grid.Row="1" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.ColumnSpan="1" Grid.RowSpan="1"/>
+            <Image Grid.Row="1" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.ColumnSpan="1" Grid.RowSpan="1" />
+            <Image Grid.Row="1" Grid.Column="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill"  Grid.ColumnSpan="1" Grid.RowSpan="1" />
+            <Image Grid.Row="5" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill"  Grid.ColumnSpan="1" Grid.RowSpan="1" />
+            <Image Grid.Row="5" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.ColumnSpan="1" />
+            <Image Grid.Row="5" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill"  Grid.ColumnSpan="1" />
+            <Image Grid.Row="5" Grid.Column="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="sample.jpg" Stretch="Fill" Grid.ColumnSpan="1"/>
+            <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Stretch" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.ColumnSpan="1" Margin="0,0,0,6"/>
+            <TextBlock Grid.Row="3" Grid.Column="3" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Stretch" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.ColumnSpan="1" Margin="0,0,0,6"/>
+            <TextBlock Grid.Row="3" Grid.Column="5" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Stretch"  Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.ColumnSpan="2" Margin="0,0,0,6" />
+            <TextBlock Grid.Row="3" Grid.Column="7" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Stretch" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.ColumnSpan="2" Margin="0,0,0,6" />
+            <TextBlock Grid.Row="7" Grid.Column="1" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Stretch" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.ColumnSpan="1"  Grid.RowSpan="2" Margin="4,0,4,46"/>
+            <TextBlock Grid.Row="7" Grid.Column="3" HorizontalAlignment="Stretch"  TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Stretch"  Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.ColumnSpan="1"  Grid.RowSpan="1"/>
+            <TextBlock Grid.Row="7" Grid.Column="5" HorizontalAlignment="Stretch"  TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Stretch"  Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333"  Grid.ColumnSpan="1"  Grid.RowSpan="1"/>
+            <TextBlock Grid.Row="7" Grid.Column="7" HorizontalAlignment="Stretch"  TextWrapping="Wrap" Text="Band Name" VerticalAlignment="Stretch" Foreground="Black" FontFamily="Segoe UI" FontWeight="Bold" FontSize="13.333" Grid.ColumnSpan="1"  Grid.RowSpan="1"/>
+    	</Grid>
 
     </Grid>
 </Page>
